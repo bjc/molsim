@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+}
+
+#instructions {
+    display: none;
+}
+
+#die {
+    display: none;
+}
+
+#errors {
+    display: none;
+}
+
+#nucleotide-selector {
+    display: none;
+}
+
+#genome-history {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.genome .nucleotide.selected {
+    border: 2px solid black;
+}

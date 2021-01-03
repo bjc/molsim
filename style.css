@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    background-color: #eee;
+}
+
+#instructions {
+    background-color: #ddd;
+}
+
+#instructions .current {
+    background-color: yellow;
+}
+
+#die {
+    background-color: #fde;
+    border: 1px solid #aaa;
+}
+
+#die .value {
+    text-align: center;
+}
+
+#nucleotide-selector {
+    background-color: ivory;
+    border: 1px solid black;
+}
+
+.genome.locked {
+    cursor: text
+}
+
+.genome>ol {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#nucleotide-selector,
+.genome:not(.locked) {
+    cursor: pointer;
+}
+
+#nucleotide-selector li:hover,
+.genome:not(.locked) .nucleotide:hover {
+    background-color: orange;
+}
+
+.genome .nucleotide.selected,
+.genome:not(.locked) .nucleotide.selected:hover {
+    background-color: red;
+}
