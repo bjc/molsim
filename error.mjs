@@ -2,8 +2,8 @@ class Error {
     constructor(elt) {
 	this.elt = elt
 
-	this._boundClickHandler = this.clickHandler.bind(this)
-	this.button.addEventListener('click', this._boundClickHandler)
+        this._boundClickHandler = this.clickHandler.bind(this)
+        this.button.addEventListener('click', this._boundClickHandler)
     }
 
     get errorElt() {
@@ -30,21 +30,21 @@ class Error {
 
     get onClick() {
         if (this._onClick !== undefined) {
-	    return this._onClick
-	}
-	return () => {}
+            return this._onClick
+        }
+        return () => {}
     }
 
     set onClick(fn) {
-	this._onClick = fn
+        this._onClick = fn
     }
 
     show() {
-	this.elt.classList.remove('hidden')
+        this.elt.classList.remove('hidden')
     }
 
     hide() {
-	this.elt.classList.add('hidden')
+        this.elt.classList.add('hidden')
     }
 
     clickHandler() {
