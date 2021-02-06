@@ -61,7 +61,7 @@ class Nucleotide {
 	this.onClick(this)
     }
 }
-Nucleotide.translation = {'A': 'G',
+Nucleotide.transition = {'A': 'G',
 			  'C': 'T',
 			  'G': 'A',
 			  'T': 'C'}
@@ -73,7 +73,7 @@ Nucleotide.defaultTransversion = {'A': 'C',
                                   'C': 'A',
                                   'G': 'T',
                                   'T': 'G'}
-Nucleotide.bases = Object.keys(Nucleotide.translation)
+Nucleotide.bases = Object.keys(Nucleotide.transition)
 
 
 export default Nucleotide

@@ -8,7 +8,6 @@ class GenomeList {
 	this.genomes.push(genome)
 	this.elt.appendChild(genome.elt)
         window.genome = genome
-        console.log('scrolling into vuew', genome.elt)
         genome.elt.scrollIntoView(false)
     }
 

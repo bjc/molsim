@@ -146,7 +146,7 @@ class PerformMutation {
 
     get expectedMutation() {
 	if (this.rules.die.value <= 14) {
-	    return Nucleotide.translation
+	    return Nucleotide.transition
 	} else if (this.rules.die.value <= 17) {
 	    return Nucleotide.complementingTransversion
 	} else {
@@ -158,8 +158,8 @@ class PerformMutation {
 	return this.rules.currentGenome.selectedNucleotide
     }
 
-    get errorTranslationHTML() {
-	return `Select the base that corresponds to a <em>translation</em> of ${this.selectedNucleotide.value}.`
+    get errorTransitionHTML() {
+	return `Select the base that corresponds to a <em>transition</em> of ${this.selectedNucleotide.value}.`
     }
     get errorComplementingTransversionHTML() {
 	return `Select the base that corresponds to a <em>complementing transversion</em> of ${this.selectedNucleotide.value}.`
@@ -169,8 +169,8 @@ class PerformMutation {
     }
 
     get errorHTML() {
-	if (this.expectedMutation == Nucleotide.translation) {
-	    return this.errorTranslationHTML
+	if (this.expectedMutation == Nucleotide.transition) {
+	    return this.errorTransitionHTML
 	} else if (this.expectedMutation == Nucleotide.complementingTransversion) {
 	    return this.errorComplementingTransversionHTML
 	} else {
