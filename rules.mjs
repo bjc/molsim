@@ -7,11 +7,10 @@ import NucleotideSelector from './nucleotide-selector.mjs'
 import Error from './error.mjs'
 
 class CloneNucleotide {
-    id = 'clone-nucleotide'
-
     constructor(rules) {
 	this.rules = rules
 
+        this.id = 'clone-nucleotide'
 	this._boundClickHandler = this.clickHandler.bind(this)
     }
 
@@ -35,10 +34,10 @@ class CloneNucleotide {
 }
 
 class RollForNucleotide {
-    id = 'roll-for-nucleotide'
-
     constructor(rules) {
 	this.rules = rules
+
+        this.id = 'roll-for-nucleotide'
     }
 
     enter() {
@@ -67,10 +66,10 @@ class RollForNucleotide {
 }
 
 class NucleotideSelect {
-    id = 'nucleotide-select'
-
     constructor(rules) {
 	this.rules = rules
+
+        this.id = 'nucleotide-select'
     }
 
     enter() {
@@ -101,10 +100,10 @@ class NucleotideSelect {
 }
 
 class RollForMutation {
-    id = 'roll-for-mutation'
-
     constructor(rules) {
 	this.rules = rules
+
+        this.id = 'roll-for-mutation'
     }
 
     enter() {
@@ -124,10 +123,10 @@ class RollForMutation {
 }
 
 class PerformMutation {
-    id = 'perform-mutation'
-
     constructor(rules) {
 	this.rules = rules
+
+        this.id = 'perform-mutation'
     }
 
     enter() {
@@ -196,11 +195,10 @@ class PerformMutation {
 }
 
 class DoNothing {
-    id = 'print-results'
-
     constructor(rules) {
 	this.rules = rules
 
+        this.id = 'print-results'
 	this._boundClickHandler = this.clickHandler.bind(this)
     }
 
