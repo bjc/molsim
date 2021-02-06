@@ -266,7 +266,7 @@ class Rules {
 	}
 	this.enterState()
     }
-
+v
     get iterations() {
         return Number(this.remainingIterations.innerText)
     }
@@ -292,7 +292,6 @@ class Rules {
             this.currentGenome.selectedNucleotide = n
             const g = this.currentGenome.clone()
             window.g = g
-            console.log(g)
             this.genomeList.push(g)
         })
 

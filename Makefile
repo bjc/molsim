@@ -1,4 +1,4 @@
 .PHONY: serve
 
 serve:
-	python -m http.server
+	python -m http.server 8080
