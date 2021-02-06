@@ -266,7 +266,7 @@ class Rules {
 	}
 	this.enterState()
     }
-v
+
     get iterations() {
         return Number(this.remainingIterations.innerText)
     }
